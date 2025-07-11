@@ -1,0 +1,513 @@
+/* styles.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    background-color: #ff6a13;
+    padding: 20px 0;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+}
+
+header .logo img {
+    width: 150px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 30px;
+}
+
+header nav ul li a {
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #ff9c4a;
+}
+
+.hero {
+    background: url('hero-image.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+    position: relative;
+}
+
+.hero h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.btn-primary {
+    background-color: white;
+    color: #ff6a13;
+    padding: 15px 40px;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #ff9c4a;
+    color: white;
+}
+
+.services {
+    padding: 80px 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 36px;
+    margin-bottom: 50px;
+}
+
+.service-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.service-item {
+    background-color: #f4f4f4;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex: 1;
+    min-width: 250px;
+    max-width: 350px;
+}
+
+.service-item img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+}
+
+.service-item h3 {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.contact {
+    padding: 80px 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    font-size: 14px;
+}
+/* Section téléchargement de l'application */
+.download {
+    padding: 80px 0;
+    background-color: #ff6a13;
+    text-align: center;
+    color: white;
+}
+
+.download h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.download p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.download-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.download-btn {
+    width: 200px;
+    height: 60px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.download-btn:hover {
+    transform: scale(1.1);
+}
+/* Style pour les liens de navigation */
+.navbar nav ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar nav ul li {
+    margin-left: 30px;
+    display: flex;
+    align-items: center; /* Aligne l'icône et le texte verticalement */
+}
+
+.navbar nav ul li a {
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s;
+}
+
+.navbar nav ul li a:hover {
+    color: #ff9c4a;
+}
+
+/* Style pour les icônes */
+.nav-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px; /* Espace entre l'icône et le texte */
+}
+
+/* Améliorations supplémentaires sur l'alignement et le survol */
+.navbar nav ul li a:hover .nav-icon {
+    transform: scale(1.1); /* Agrandit l'icône au survol */
+    transition: transform 0.3s ease;
+}
+/* Section "Comment commander avec Wassla" */
+.how-to-order {
+    padding: 80px 0;
+    background-color: #f9f9f9;
+    text-align: center;
+    border-top: 5px solid #ff6a13; /* Bordure décorative en haut */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Ombre légère pour un effet flottant */
+}
+
+.how-to-order h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase; /* Ajout du style en majuscules */
+    transition: color 0.3s ease; /* Ajout d'une transition pour une interaction */
+}
+
+.how-to-order h2:hover {
+    color: #ff6a13; /* Changement de couleur au survol */
+}
+
+.how-to-order p {
+    font-size: 18px;
+    margin-bottom: 40px;
+    color: #555;
+    font-style: italic;
+    letter-spacing: 1px;
+    line-height: 1.6;
+}
+
+.steps {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    justify-items: center;
+    padding: 0 30px;
+    margin-top: 30px;
+    transition: transform 0.5s ease; /* Animation au survol de la section */
+}
+
+.steps:hover {
+    transform: scale(1.05); /* Effet de zoom sur l'ensemble des étapes */
+}
+
+.step {
+    background-color: white;
+    padding: 25px 30px;
+    border-radius: 15px; /* Coins plus arrondis pour un effet moderne */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Ombre plus marquée */
+    text-align: center;
+    width: 250px;
+    max-width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer; /* Curseur pointer pour indiquer que l'élément est cliquable */
+}
+
+.step:hover {
+    transform: translateY(-15px); /* Animation pour l'élément au survol */
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+    background-color: #ff6a13; /* Changement de fond au survol */
+    color: white;
+}
+
+.step-icon {
+    width: 100%;
+    height: 160px; /* Légère augmentation de la taille de l'icône */
+    object-fit: cover; /* Remplir l'espace sans déformer l'image */
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 3px solid #ff6a13; /* Bordure autour de l'image pour un effet plus stylé */
+    transition: transform 0.3s ease;
+}
+
+.step:hover .step-icon {
+    transform: scale(1.05); /* Agrandir l'icône au survol */
+}
+
+.step h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #ff6a13; /* Couleur orange pour les titres */
+    font-weight: bold;
+    text-transform: uppercase; /* Enlever les majuscules pour un look plus moderne */
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+.step:hover h3 {
+    color: white; /* Changer la couleur du titre au survol */
+}
+
+.step p {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+/* Responsive: Grille pour petits écrans */
+@media (max-width: 768px) {
+    .steps {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .step {
+        width: 220px;
+        max-width: 250px;
+    }
+
+    .step-icon {
+        height: 130px; /* Ajustement de la taille des captures d'écran pour les tablettes */
+    }
+
+    .step h3 {
+        font-size: 20px; /* Réduction de la taille du titre pour les écrans moyens */
+    }
+
+    .step p {
+        font-size: 14px; /* Réduction du texte pour les petits écrans */
+    }
+}
+
+@media (max-width: 480px) {
+    .steps {
+        grid-template-columns: 1fr;
+    }
+
+    .step {
+        width: 200px;
+        max-width: 220px;
+    }
+
+    .step-icon {
+        height: 110px; /* Ajustement de la taille des captures d'écran pour les petits téléphones */
+    }
+
+    .step h3 {
+        font-size: 18px; /* Réduction de la taille du titre pour les très petits écrans */
+    }
+
+    .step p {
+        font-size: 12px; /* Texte encore plus petit sur mobile */
+    }
+}
+.hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('votre-image.jpg');
+    background-blend-mode: multiply;
+    color: white;
+    text-align: center;
+  }
+.livreur-restaurateur {
+    padding: 100px 30px;
+    background: linear-gradient(135deg, #fff1eb 0%, #ffecd2 100%);
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+.livreur-restaurateur {
+    padding: 100px 30px;
+    background: linear-gradient(135deg, #fff1eb 0%, #ffecd2 100%);
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.livreur-restaurateur::before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle at top left, rgba(255,106,19,0.1), transparent 70%);
+    z-index: -1;
+    animation: pulseLight 6s infinite ease-in-out;
+}
+
+@keyframes pulseLight {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 0.8;
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 1;
+    }
+}
+
+.livreur-restaurateur h2 {
+    font-size: 42px;
+    margin-bottom: 60px;
+    color: #ff6a13;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.05);
+}
+
+.two-columns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.column {
+    flex: 1 1 320px;
+    max-width: 480px;
+    background: rgba(255,255,255,0.7);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 2px solid rgba(255,106,19,0.3);
+    padding: 35px 30px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+    position: relative;
+    overflow: hidden;
+}
+
+.column:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 20px 40px rgba(255,106,19,0.3);
+    background: rgba(255,255,255,0.85);
+}
+
+.column h3 {
+    font-size: 26px;
+    margin-bottom: 20px;
+    color: #e74c3c;
+    font-weight: 700;
+    position: relative;
+}
+
+.column h3::before {
+    content: '✨';
+    position: absolute;
+    left: -30px;
+    top: 0;
+    font-size: 22px;
+    animation: sparkle 2s infinite ease-in-out;
+}
+
+@keyframes sparkle {
+    0%, 100% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(15deg);
+    }
+}
+
+.column ol {
+    padding-left: 20px;
+    font-size: 16px;
+    color: #444;
+    line-height: 1.8;
+    list-style: none;
+}
+
+.column ol li {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 15px;
+}
+
+.column ol li::before {
+    content: "🚀";
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+@media (max-width: 768px) {
+    .two-columns {
+        flex-direction: column;
+    }
+
+    .column {
+        max-width: 100%;
+    }
+}
